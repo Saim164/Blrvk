@@ -15,6 +15,10 @@ app.use(express.static(path.join(__dirname, "..//frontend")));
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../frontend/html/index.html"));
+});
+
 app.get("/success" , (req,res)=>{
     res.sendFile(path.join(__dirname, "../frontend/html/success.html"));
 })
