@@ -106,5 +106,5 @@ app.post('/newsletter', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Backend is running on port ${port}`);
+    console.log(`Backend is running on port ${PORT}`);
 });
