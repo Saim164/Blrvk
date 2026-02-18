@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get in Touch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link 
+   rel="preconnect" href="https://fonts.gstatic.com" 
+   crossorigin>
+  <link 
+   href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+   rel="stylesheet">
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+  <section class="form-section">
+    <div class="form-card">
+
+      <h1>Tell us about yourself</h1>
+      <p>We'd love to understand your business and how we can help.</p>
+
+      <form action="http://localhost:3000/send-form" method="post">
+
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Your full name" name="name" id="name" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" placeholder="you@email.com" name="email" id="email" required />
+        </div>
+
+        <div class="input-group">
+          <label for="business">Business Name</label>
+          <input type="text" placeholder="Your company name" name="business" id=" business" required/>
+        </div>
+
+        <div class="input-group">
+          <label for="id">Region</label>
+          <select  name="region" id="region" required>
+            <option value="">Select region</option>
+            <option>North America</option>
+            <option>South America</option>
+            <option>Europe</option>
+            <option>Asia</option>
+            <option>Middle East</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <!-- <div class="input-group">
+          <label for="description">How can we help you?</label>
+          <textarea placeholder="Tell us your requirements..." name="description" id="description" rows="4" required>
+        </textarea> -->
+
+        <div class="input-group">
+            <label for="des">How can we help you?</label>
+            <textarea name="des" id="des" placeholder="Tell us your required..." rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.contact-section {
+  min-height: 100vh;
+  background: url("../src/stars.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.cards-section{
+    width: 100%;
+    max-width: 1080px;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.cards-section h1{
+    margin-bottom: 0.5rem ;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.tagline{
+    margin-bottom: 1.5rem ;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.cards{
+    display: block;
+}
+
+.card{
+    padding:1rem 2rem 1rem 2rem;
+    border: 1px solid #ffffffa4;
+    margin-bottom: 1.5rem ;
+    border-radius: 12px;
+}
+
+.card h3{
+    margin-bottom: 0.7rem;
+    font-size: 1.5rem;
+}
+
+.name{
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+
+}
+
+
