@@ -118,12 +118,8 @@ nav{
   padding: 0.4rem 0.7rem;
   border-radius: 12px;
   background-color: #6c63ff;
-}
-
-.consult a{
   font-size: 0.8rem;
   font-weight: 600;
-  text-decoration: none;
 }
 
 .consult:hover{
@@ -220,11 +216,7 @@ main{
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
-}
-
-.hero-btn a{
-  font-size: clamp(0.85rem, 2vw, 1.25rem);
-  text-decoration: none;
+    font-size: clamp(0.85rem, 2vw, 1.25rem);
 }
 
 .hero-btn:hover{
@@ -347,10 +339,6 @@ main{
   font-weight: 700;
   font-size: 0.9375rem;
   transition: all 0.3s ease;
-}
-
-.btn a{
-  text-decoration: none;
 }
 
 .consult-btn {
@@ -498,7 +486,6 @@ main{
   width: 100%;
   padding: 4rem 1.5rem;
   text-align: center;
-  /* background-image: url("..//src/stats.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;

@@ -21,6 +21,26 @@ app.get("/" , (req , res)=>{
     res.sendFile(path.join(frontendPath, "html/index.html"));
 })
 
+app.get("/demo" , (req , res)=>{
+    res.sendFile(path.join(frontendPath, "html/demo.html"));
+})
+
+app.get("/getintouch" , (req , res)=>{
+    res.sendFile(path.join(frontendPath, "html/form.html"));
+})
+
+app.get("/consult" , (req , res)=>{
+    res.sendFile(path.join(frontendPath, "html/consult.html"));
+})
+
+app.get("/termsandconditions" , (req , res)=>{
+    res.sendFile(path.join(frontendPath, "html/terms.html"));
+})
+
+app.get("/contacts" , (req , res)=>{
+    res.sendFile(path.join(frontendPath, "html/contact.html"));
+})
+
 app.get("/success" , (req,res)=>{
     res.sendFile(path.join(frontendPath, "html/success.html"));
 })
