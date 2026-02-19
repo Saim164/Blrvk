@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "../frontend")));
 
 app.get("/" , (req , res)=>{
-    res.sendFile(path.resolve(__dirname, "../frontend/html/index.html"));
+    res.send("hello world")
 })
 
 app.get("/success" , (req,res)=>{
