@@ -10,22 +10,24 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "../frontend")));
 
-app.get("/" , (req , res)=>{
-    res.send("hello world")
-})
 
-app.get("/success" , (req,res)=>{
-    res.sendFile(path.join(__dirname, "../frontend/html/success.html"));
-})
-
-app.get("/error" , (req,res)=>{
-    res.sendFile(path.join(__dirname, "../frontend/html/error.html"));
-})
+const frontendPath = path.join(__dirname , "../frontend");
+app.use(express.static(frontendPath));
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+app.get("/" , (req , res)=>{
+    res.sendFile(path.join(frontendPath, "html/index.html"));
+})
+
+app.get("/success" , (req,res)=>{
+    res.sendFile(path.join(frontendPath, "html/success.html"));
+})
+
+app.get("/error" , (req,res)=>{
+    res.sendFile(path.join(frontendPath, "html/error.html"));
+})
 
 app.post('/send-form', async (req, res) => {
     const { name, email, business, region, des } = req.body;
