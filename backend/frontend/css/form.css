@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Background image */
+.form-section {
+  min-height: 100vh;
+  background: url("../src/stars.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Dark card */
+.form-card {
+  background: rgba(20, 20, 20, 0.9);
+  color: white;
+  width: 100%;
+  max-width: 480px;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* Text */
+.form-card h1 {
+  margin-bottom: 0.5rem;
+}
+
+.form-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+/* Form fields */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  color: #aaa;
+}
+
+input,
+select,
+textarea {
+  padding: 0.75rem;
+  border-radius: 9px;
+  border: none;
+  outline: none;
+  background: #1f1f1f;
+  color: white;
+}
+
+textarea{
+  resize: none;
+  overflow: auto;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #6c63ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button:hover {
+  background: #584ee0;
+}

@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-const frontendPath = path.join(__dirname , "../frontend");
+const frontendPath = path.join(__dirname , "frontend");
 app.use(express.static(frontendPath));
 
 const resend = new Resend(process.env.RESEND_API_KEY);

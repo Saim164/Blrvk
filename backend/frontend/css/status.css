@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.status-section {
+  min-height: 100vh;
+  background: url("../src/stars.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.status {
+  background: rgba(20, 20, 20, 0.9);
+  color: white;
+  width: 100%;
+  max-width: 680px;
+  padding: 8rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+
+.success {
+  border-left: 0.375rem solid rgb(40, 167, 69);
+}
+
+.error {
+  border-left: 0.375rem solid rgb(220, 53, 69);
+}
+
+h1 {
+  margin-bottom: 1rem; 
+}
+
+p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #21609a;
+}
+
+.success button{
+  background-color: rgb(40, 167, 69);
+}
+
+.success button:hover {
+  background-color: rgba(40, 167, 69 , 0.7);
+} 
+
+ .error button {
+  background-color: rgb(220, 53, 69);
+}
+
+ .error button:hover {
+  background-color: rgba(220, 53, 69 , 0.7);
+} 
