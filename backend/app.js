@@ -10,10 +10,10 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "..//frontend")));
+app.use(express.static(path.join(__dirname, "../frontend")));
 
 app.get("/" , (req , res)=>{
-    res.sendFile(path.join(__dirname, "../frontend/html/index.html"));
+    res.sendFile(path.resolve(__dirname, "../frontend/html/index.html"));
 })
 
 app.get("/success" , (req,res)=>{
